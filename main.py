@@ -39,12 +39,13 @@ class PolygonLine:
 
             if left_dist < right_dist:
                 index = (index - skip_size) % n
-                skip_size = int(skip_size / 2)
+                # Used only for logging purposes
                 self.point_history.append(self.polygon[index])
             else:
                 index = (index + skip_size) % n
-                skip_size = int(skip_size / 2)
+                # Used only for logging purposes
                 self.point_history.append(self.polygon[index])
+            skip_size = int(skip_size / 2)
 
         search_lst = self.polygon[index - 3:index + 2]
         self.point_history = self.point_history + search_lst

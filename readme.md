@@ -15,7 +15,8 @@ clockwise order and `line` a three tuple `(a,b,c)` specifying a line as describe
 ### Algorithm
 The algorithm starts by selecting a vertex at random on the polygon and then performs binary search across
 all vertices based on the distance to the line. The distance to the line is calculated in constant time using a simple 
-projection operator as taught in linear algebra.
+projection operator as taught in linear algebra. For full psuedocode with informal complexity/correctness analysis please
+see `GettingClose.pdf`.
 
 
 ### Run Guide:
